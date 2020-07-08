@@ -16,7 +16,7 @@ namespace SimpleTrader.WPF
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-            var window = new Window();
+            var window = new MainWindow();
             window.DataContext = new MainViewModel();
             window.Show();
 
