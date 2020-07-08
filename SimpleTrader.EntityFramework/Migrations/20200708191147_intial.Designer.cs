@@ -10,8 +10,8 @@ using SimpleTrader.EntityFramework;
 namespace SimpleTrader.EntityFramework.Migrations
 {
     [DbContext(typeof(SimpleTraderDbContext))]
-    [Migration("20200708142539_add-dates")]
-    partial class adddates
+    [Migration("20200708191147_intial")]
+    partial class intial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

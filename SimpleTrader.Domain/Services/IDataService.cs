@@ -13,6 +13,6 @@ namespace SimpleTrader.Domain.Services
 
         Task<T> Update(int id, T entity);
 
-        Task<bool> Delete(int i);
+        Task<bool> Delete(int id);
     }
 }

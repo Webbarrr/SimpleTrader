@@ -9,18 +9,13 @@ namespace SimpleTrader.EntityFramework
         public DbSet<Account> Accounts { get; set; }
         public DbSet<AssetTransaction> AssetTransactions { get; set; }
 
+        public SimpleTraderDbContext(DbContextOptions options) : base(options) {}
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<AssetTransaction>().OwnsOne(a => a.Stock);
 
             base.OnModelCreating(modelBuilder);
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("server=localhost;database=SimpleTraderDB;trusted_connection=true;");
-
-            base.OnConfiguring(optionsBuilder);
         }
     }
 }
