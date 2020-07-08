@@ -1,8 +1,6 @@
 ﻿using SimpleTrader.WPF.States.Navigators;
 using SimpleTrader.WPF.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
 
 namespace SimpleTrader.WPF.Commands
@@ -33,9 +31,11 @@ namespace SimpleTrader.WPF.Commands
                     case ViewType.Home:
                         _navigator.CurrentViewModel = new HomeViewModel();
                         break;
+
                     case ViewType.Portfolio:
                         _navigator.CurrentViewModel = new PortfolioViewModel();
                         break;
+
                     default:
                         break;
                 }

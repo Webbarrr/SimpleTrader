@@ -1,6 +1,4 @@
 ﻿using SimpleTrader.WPF.ViewModels;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
 
 namespace SimpleTrader.WPF.States.Navigators
